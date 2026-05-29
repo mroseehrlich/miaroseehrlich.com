@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #f5f5f5;
+  font-family: Georgia, serif;
+}
+
+main {
+  padding: 6rem;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
