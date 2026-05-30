@@ -7,7 +7,9 @@ function App() {
         </div>
 
         <div className="intro-copy">
-          <h1>Mia Rose Ehrlich</h1>
+          <h1>
+            Mia Rose <span>Ehrlich</span>
+          </h1>
           <p className="lede">Software engineer based in Santa Fe, New Mexico.</p>
           <p>
             Backend systems, web applications, writing, and digital spaces with a

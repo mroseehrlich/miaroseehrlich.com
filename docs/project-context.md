@@ -163,6 +163,8 @@ The current successful direction:
 
 ## Current Homepage Direction
 
+Warm dark palette. Serif typography. Sparse professional copy. Desert image treated as background residue, not hero image. Goal: restrained, literary, technical, sense of place.
+
 Current copy direction:
 
 “Mia Rose Ehrlich”
