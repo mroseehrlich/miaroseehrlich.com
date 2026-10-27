@@ -118,7 +118,7 @@ p {
 
 h1,
 h2 {
-  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  font-family: var(--font-libre-baskerville), Georgia, "Times New Roman", serif;
 }
 
 h1 {

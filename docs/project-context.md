@@ -38,6 +38,42 @@ It should feel authored, lived-in, and emotionally coherent.
 
 ---
 
+## Content Philosophy
+
+The website is a personal archive, not a conventional developer portfolio.
+
+Its organizing metaphor is a small filing cabinet containing different
+parts of the creator's interests, work, and imagination.
+
+The site should support:
+
+- Software projects and technical experiments
+- Creative and interactive projects
+- Essays, fiction, criticism, and miscellaneous writing
+- Photography and visual material
+- Audio and other multimedia
+- Fragments, collected objects, and observations
+
+Content does not need to demonstrate professional relevance.
+
+Avoid:
+- Treating all writing as technical documentation
+- Manufactured thought leadership
+- SEO-driven content strategy
+- Artificial publishing schedules
+- Categorizing every personal interest as a professional skill
+- Forcing every item into a conventional blog-post format
+
+The site should feel collected and arranged rather than generated
+from a content template.
+
+Professional information should be easy to find, but it should not
+determine the identity of the entire site.
+
+Cabinet items may be brief, untitled, image-led, audio-led, or composed of several media types. They should not require a conventional article structure. The CMS must support adding and arranging these items through a visual editing interface without manually managing files or writing Markdown.
+
+---
+
 ## Core Themes
 
 The site exists at the intersection of:
@@ -89,18 +125,6 @@ Primary emotional references:
 
 Theatricality is welcome.
 Performativity is not.
-
-Nothing should feel like:
-
-> “look how interesting/artistic I am.”
-
-Everything should instead feel:
-
-- natural
-- metabolized
-- lived
-- sincere
-- internally motivated
 
 ---
 
@@ -190,14 +214,26 @@ without sounding:
 ## Technical Direction
 
 Current stack:
-
+- Next.js (App Router)
 - React
-- Vite
+- JavaScript / JSX
+- Vanilla CSS
 
-Potential future additions:
+Planned:
+- Sanity headless CMS
+- Structured content types for Projects, Writing, and Cabinet items
+- CMS-managed image and multimedia uploads
+- Draft and published content states
+- Dynamic routes for individual entries
 
-- Tailwind (optional)
-- Framer Motion (light use only)
+Architectural principles:
+- Prefer Server Components for noninteractive content.
+- Use Client Components only when browser-side interactivity is necessary.
+- Keep the public frontend independent of the CMS editing interface.
+- Preserve the existing custom CSS and visual language.
+- Avoid unnecessary abstractions and dependencies.
+- Do not introduce Tailwind or a UI component framework without a compelling reason.
+- Use managed CMS authentication rather than building custom admin authentication.
 
 Avoid:
 
@@ -223,27 +259,37 @@ The codebase should feel:
 
 ---
 
-## Long-Term Possibility
+## Possible Visual Motifs
 
-A future related project may evolve into a more experimental interactive environment currently referred to as “Head Trauma.”
+A restrained Argiope orb-web motif may be explored as a reference
+to networks, hidden structure, and carefully constructed systems.
 
-Themes include:
+Potential treatments:
+- Faint, cropped web geometry behind project entries
+- Subtle reveal behavior on hover or keyboard focus
+- Irregular radial lines and partial arcs
+- A tiny stabilimentum-inspired mark resembling a Victorian natural-history illustration
 
-- recursive architecture
-- mirrors
-- memory
-- atmosphere
-- digital space
-- spectral presence
-- emotional geography
+The motif should remain nearly subliminal.
 
-But this should NOT dominate the professional site yet.
+Avoid:
+- Literal spider-themed design
+- Halloween or gothic kitsch
+- Decorative web patterns
+- Excessive motion
+- Making symbolic explanations a prerequisite for appreciating the design.
 
-The professional site should remain:
+The stabilimentum is preferred to a literal spider illustration.
 
-- restrained
-- coherent
-- and lightly suggestive rather than explicit.
+This is an exploratory design direction, not a mandatory feature.
+
+---
+
+## Related but Separate Projects
+
+Head Trauma is a separate experimental digital environment exploring recursive architecture, memory, mirrors, domestic surrealism, and emotional geography.
+
+It shares some aesthetic and conceptual interests with this website, but the projects have different purposes and should retain distinct identities.
 
 ---
 
