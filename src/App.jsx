@@ -70,7 +70,7 @@ function SiteFooter() {
 
       <nav className="footer-links" aria-label="Contact and external links">
         <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://github.com/your-username">GitHub</a>
+        <a href="https://github.com/mroseehrlich">GitHub</a>
         <a href="/resume.pdf">Résumé</a>
       </nav>
     </footer>
