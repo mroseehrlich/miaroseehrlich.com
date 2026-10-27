@@ -28,7 +28,7 @@ Planned:
 Clone the repository:
 
 ```bash
-git clone https://github.com/mroseehrlich/miaroseehrlich.git
+git clone https://github.com/mroseehrlich/miaroseehrlich.com.git
 cd miaroseehrlich
 ```
 
