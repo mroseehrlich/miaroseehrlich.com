@@ -31,7 +31,9 @@ export default async function ProjectsPage() {
                 className="project-entry"
                 key={project._id}
               >
-                <h2>{project.title}</h2>
+                  <Link href={`/projects/${project.slug}`}>
+                    {project.title}
+                  </Link>
 
                 <p>{project.summary}</p>
 
