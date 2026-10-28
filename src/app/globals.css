@@ -306,6 +306,29 @@ p {
   border-color: rgba(155, 90, 62, 0.9);
 }
 
+.project-list {
+  margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.project-entry {
+  padding-block: 2.5rem;
+  border-top: 1px solid rgba(238, 231, 220, 0.1);
+}
+
+.project-entry h2 {
+  margin-bottom: 1rem;
+}
+
+.project-entry a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.project-entry p {
+  max-width: 36rem;
+}
+
 @keyframes drift {
   from {
     background-position: 0% 0%, 100% 100%, 0 0;

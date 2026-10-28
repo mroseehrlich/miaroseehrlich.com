@@ -32,7 +32,6 @@ The site is not meant to function as:
 
 - a traditional UX portfolio
 - a corporate personal brand
-- or a maximalist art project
 
 It should feel authored, lived-in, and emotionally coherent.
 
@@ -256,6 +255,20 @@ The codebase should feel:
 - clear
 - modular
 - and human-readable
+
+---
+
+Creative Range and Interaction
+
+The site should demonstrate range in visual design, interaction, writing, and technical execution.
+
+Restraint is one part of its design language, not a universal limitation. Theatricality, humor, surprise, visual richness, and unconventional interactions are welcome where appropriate.
+
+Different sections may have distinct visual and behavioral identities. The homepage can remain composed while the Cabinet becomes more experimental and mischievous.
+
+Interactions should reward curiosity and encourage exploration without obscuring essential navigation, compromising accessibility, or making ordinary tasks unnecessarily difficult.
+
+The objective is not uniform subtlety. It is coherence across a variety of experiences.
 
 ---
 
