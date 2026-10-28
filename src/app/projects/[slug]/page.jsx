@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageHeader from "../../../components/PageHeader";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 
@@ -38,23 +39,20 @@ export default async function ProjectPage({ params }) {
 
   return (
     <main className="subpage">
-      <Link className="back-link" href="/projects">
-        ← All projects
-      </Link>
+      <PageHeader
+        title={project.title}
+        description={project.summary}
+        parent={{ href: "/projects", label: "All projects" }}
+      >
+        {project.technologies?.length > 0 && (
+          <p className="quiet page-header-meta">
+            {project.technologies.join(" · ")}
+          </p>
+        )}
+      </PageHeader>
 
       <article className="project-detail">
-        <header className="project-detail-header">
-          <h1>{project.title}</h1>
-          <p className="project-summary">
-            {project.summary}
-          </p>
-
-          {project.technologies?.length > 0 && (
-            <p className="quiet">
-              {project.technologies.join(" · ")}
-            </p>
-          )}
-        </header>
+    
 
         {project.body?.length > 0 && (
           <div className="project-body">

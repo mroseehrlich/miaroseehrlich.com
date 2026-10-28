@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import PageHeader from "../../components/PageHeader";
 export const metadata = {
   title: "Writing | Mia Rose Ehrlich",
 };
@@ -7,13 +7,11 @@ export const metadata = {
 export default function WritingPage() {
   return (
     <main className="subpage">
-      <Link className="back-link" href="/">
-        Mia Rose Ehrlich
-      </Link>
-
       <section className="subpage-content">
-        <h1>Writing</h1>
-        <p>In progress.</p>
+        <PageHeader
+          title="Writing"
+          description="In progress."
+        />
       </section>
     </main>
   );

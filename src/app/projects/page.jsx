@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageHeader from "../../components/PageHeader";
 import { client } from "../../sanity/lib/client";
 import { PROJECTS_QUERY } from "../../sanity/lib/queries";
 
@@ -12,14 +13,11 @@ export default async function ProjectsPage() {
 
   return (
     <main className="subpage">
-      <Link className="back-link" href="/">
-        Mia Rose Ehrlich
-      </Link>
-
       <section className="subpage-content">
-        <h1>Projects</h1>
-        <p>Selected work and ongoing experiments.</p>
-
+        <PageHeader
+          title="Projects"
+          description="Selected work and ongoing experiments."
+        />
         <div className="project-list">
           {projects.length === 0 ? (
             <p className="quiet">
