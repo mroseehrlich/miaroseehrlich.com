@@ -20,9 +20,14 @@ export const PROJECT_QUERY = defineQuery(`
     summary,
     status,
     technologies,
-    body,
     links,
-    featuredImage
+    featuredImage,
+    body[]{
+      ...,
+      _type == "image" => {
+        "dimensions": asset->metadata.dimensions
+      }
+    }
   }
 `);
 
@@ -48,7 +53,12 @@ export const WRITING_ENTRY_QUERY = defineQuery(`
     excerpt,
     publishedAt,
     featuredImage,
-    body
+    body[]{
+      ...,
+      _type == "image" => {
+        "dimensions": asset->metadata.dimensions
+      }
+    }
   }
 `);
 

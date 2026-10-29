@@ -10,6 +10,13 @@ const components = {
         return null;
       }
 
+      const { width, height } = value.dimensions || {};
+
+      if (!width || !height) {
+        return null;
+      }
+
+
       return (
         <figure className="rich-text-image">
           <Image
@@ -18,8 +25,8 @@ const components = {
               .auto("format")
               .url()}
             alt={value.alt || ""}
-            width={1200}
-            height={800}
+            width={width}
+            height={height}
             sizes="(max-width: 700px) 100vw, 672px"
             style={{
               width: "100%",
