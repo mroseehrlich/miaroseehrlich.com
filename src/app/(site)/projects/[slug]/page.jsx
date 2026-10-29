@@ -1,6 +1,8 @@
 
 import Link from "next/link";
 import PageHeader from "../../../../components/PageHeader";
+import Image from "next/image";
+import { urlFor } from "../../../../sanity/lib/image";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 
@@ -42,7 +44,7 @@ export default async function ProjectPage({ params }) {
       <PageHeader
         title={project.title}
         description={project.summary}
-        parenßt={{ href: "/projects", label: "All projects" }}
+        parent={{ href: "/projects", label: "All projects" }}
       >
         {project.technologies?.length > 0 && (
           <p className="quiet page-header-meta">
@@ -50,6 +52,22 @@ export default async function ProjectPage({ params }) {
           </p>
         )}
       </PageHeader>
+
+      {project.featuredImage?.asset && (
+        <figure className="project-featured-image">
+          <Image
+            src={urlFor(project.featuredImage)
+              .width(1200)
+              .height(750)
+              .auto("format")
+              .url()}
+            alt={project.featuredImage.alt || ""}
+            width={1200}
+            height={750}
+            sizes="(max-width: 700px) 100vw, 736px"
+          />
+        </figure>
+      )}
 
       <article className="project-detail">
     

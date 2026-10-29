@@ -484,6 +484,17 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.project-featured-image {
+  max-width: 46rem;
+  margin: 0 0 clamp(2rem, 5vw, 3rem);
+}
+
+.project-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
 
 .writing-list {
   margin-top: 1rem;

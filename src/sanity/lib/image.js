@@ -1,4 +1,5 @@
-import createImageUrlBuilder from '@sanity/image-url'
+import { createImageUrlBuilder } from '@sanity/image-url'
+import { client } from "./client";
 
 import { dataset, projectId } from '../env'
 
