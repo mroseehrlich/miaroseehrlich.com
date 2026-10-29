@@ -1,11 +1,11 @@
 
 import Link from "next/link";
-import PageHeader from "../../../components/PageHeader";
+import PageHeader from "../../../../components/PageHeader";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 
-import { client } from "../../../sanity/lib/client";
-import { PROJECT_QUERY } from "../../../sanity/lib/queries";
+import { client } from "../../../../sanity/lib/client";
+import { PROJECT_QUERY } from "../../../../sanity/lib/queries";
 
 async function getProject(slug) {
   return client.fetch(
@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }) {
       <PageHeader
         title={project.title}
         description={project.summary}
-        parent={{ href: "/projects", label: "All projects" }}
+        parenßt={{ href: "/projects", label: "All projects" }}
       >
         {project.technologies?.length > 0 && (
           <p className="quiet page-header-meta">

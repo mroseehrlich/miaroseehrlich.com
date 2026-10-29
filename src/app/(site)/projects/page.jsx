@@ -1,8 +1,8 @@
 
 import Link from "next/link";
-import PageHeader from "../../components/PageHeader";
-import { client } from "../../sanity/lib/client";
-import { PROJECTS_QUERY } from "../../sanity/lib/queries";
+import PageHeader from "../../../components/PageHeader";
+import { client } from "../../../sanity/lib/client";
+import { PROJECTS_QUERY } from "../../../sanity/lib/queries";
 
 export const metadata = {
   title: "Projects | Mia Rose Ehrlich",

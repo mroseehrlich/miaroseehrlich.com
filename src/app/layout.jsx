@@ -1,6 +1,6 @@
+
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
-import SiteFooter from "../components/SiteFooter";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -19,12 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={libreBaskerville.variable}>
-      <body>
-        <div className="page">
-          {children}
-          <SiteFooter />
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

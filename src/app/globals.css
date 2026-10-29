@@ -412,51 +412,62 @@ p {
   line-height: 1.55;
 }
 
-.project-body {
+.project-body,
+.writing-body {
   max-width: 42rem;
   padding-block: clamp(2.5rem, 6vw, 4rem);
   color: var(--bone);
 }
 
-.project-body h2 {
+.project-body h2,
+.writing-body h2 {
   margin: 2.75rem 0 1rem;
   font-size: clamp(1.6rem, 2.5vw, 2rem);
   line-height: 1.2;
 }
 
-.project-body h3 {
+.project-body h3,
+.writing-body h3 {
   margin: 2rem 0 0.75rem;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 1.3;
 }
 
 .project-body p,
-.project-body li {
+.project-body li,
+.writing-body p,
+.writing-body li {
   font-size: 1rem;
   line-height: 1.75;
   color: var(--bone);
 }
 
-.project-body p {
+.project-body p,
+.writing-body p {
   margin: 0 0 1.25rem;
 }
 
 .project-body ul,
-.project-body ol {
+.project-body ol,
+.writing-body ul,
+.writing-body ol {
   margin: 1rem 0 1.75rem;
   padding-left: 1.5rem;
 }
 
-.project-body li {
+.project-body li,
+.writing-body li {
   padding-left: 0.25rem;
   margin-bottom: 0.75rem;
 }
 
-.project-body li::marker {
+.project-body li::marker,
+.writing-body li::marker {
   color: var(--rust);
 }
 
-.project-body strong {
+.project-body strong,
+.writing-body strong {
   font-weight: 700;
   color: var(--bone);
 }
@@ -471,6 +482,71 @@ p {
   gap: 1.5rem;
   padding-block: 2rem;
   border-top: 1px solid var(--line);
+}
+
+
+.writing-list {
+  margin-top: 1rem;
+  max-width: 46rem;
+}
+
+.writing-entry {
+  border-top: 1px solid rgba(238, 231, 220, 0.12);
+  padding-block: 2.5rem;
+}
+
+.writing-entry h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.65rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+
+.writing-entry h2 a {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+.writing-entry h2 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.writing-entry time,
+.writing-date {
+  display: block;
+  color: var(--bone);
+  opacity: 0.65;
+  font-size: 0.85rem;
+}
+
+.writing-entry time {
+  margin-bottom: 1rem;
+}
+
+.writing-subtitle,
+.writing-excerpt {
+  max-width: 38rem;
+  margin: 0.75rem 0 0;
+  line-height: 1.65;
+}
+
+.writing-detail {
+  max-width: 46rem;
+}
+
+.writing-body {
+  max-width: 42rem;
+  padding-block: 2.5rem;
+  color: var(--bone);
+}
+
+.writing-date {
+  margin-top: 1.25rem;
+}
+
+.writing-body > :first-child {
+  margin-top: 0;
 }
 
 @keyframes drift {
