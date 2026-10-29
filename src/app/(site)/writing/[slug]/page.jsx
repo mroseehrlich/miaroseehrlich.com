@@ -1,8 +1,9 @@
 
 import { notFound } from "next/navigation";
-import { PortableText } from "@portabletext/react";
-
+import RichText from "../../../../components/RichText";
 import PageHeader from "../../../../components/PageHeader";
+import Image from "next/image";
+import { urlFor } from "../../../../sanity/lib/image";
 import { client } from "../../../../sanity/lib/client";
 import { WRITING_ENTRY_QUERY } from "../../../../sanity/lib/queries";
 
@@ -64,8 +65,24 @@ export default async function WritingEntryPage({ params }) {
           )}
         </PageHeader>
 
+        {entry.featuredImage?.asset && (
+          <figure className="writing-featured-image">
+            <Image
+              src={urlFor(entry.featuredImage)
+                .width(1200)
+                .height(750)
+                .auto("format")
+                .url()}
+              alt={entry.featuredImage.alt || ""}
+              width={1200}
+              height={750}
+              sizes="(max-width: 700px) 100vw, 736px"
+            />
+          </figure>
+        )}
+
         <div className="writing-body">
-          <PortableText value={entry.body} />
+          <RichText value={entry.body} />
         </div>
       </article>
     </main>

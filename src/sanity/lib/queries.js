@@ -47,6 +47,7 @@ export const WRITING_ENTRY_QUERY = defineQuery(`
     subtitle,
     excerpt,
     publishedAt,
+    featuredImage,
     body
   }
 `);

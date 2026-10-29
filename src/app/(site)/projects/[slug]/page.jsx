@@ -1,10 +1,10 @@
 
 import Link from "next/link";
 import PageHeader from "../../../../components/PageHeader";
+import RichText from "../../../../components/RichText";
 import Image from "next/image";
 import { urlFor } from "../../../../sanity/lib/image";
 import { notFound } from "next/navigation";
-import { PortableText } from "@portabletext/react";
 
 import { client } from "../../../../sanity/lib/client";
 import { PROJECT_QUERY } from "../../../../sanity/lib/queries";
@@ -74,7 +74,7 @@ export default async function ProjectPage({ params }) {
 
         {project.body?.length > 0 && (
           <div className="project-body">
-            <PortableText value={project.body} />
+            <RichText value={project.body} />
           </div>
         )}
 

@@ -560,6 +560,37 @@ p {
   margin-top: 0;
 }
 
+
+.writing-featured-image {
+  max-width: 46rem;
+  margin: 0 0 clamp(2rem, 5vw, 3rem);
+}
+
+.writing-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rich-text-image {
+  margin: 2.5rem 0;
+}
+
+.rich-text-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rich-text-image figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+
 @keyframes drift {
   from {
     background-position: 0% 0%, 100% 100%, 0 0;

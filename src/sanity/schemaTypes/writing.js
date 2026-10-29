@@ -44,6 +44,20 @@ export const writingType = defineType({
     }),
 
     defineField({
+      name: "featuredImage",
+      title: "Featured image",
+      type: "image",
+      options: { hotspot: true },
+      fields: [
+        defineField({
+          name: "alt",
+          title: "Alternative text",
+          type: "string",
+        }),
+      ],
+    }),
+
+    defineField({
       name: "publishedAt",
       title: "Publication date",
       type: "date",
@@ -57,6 +71,23 @@ export const writingType = defineType({
       of: [
         defineArrayMember({
           type: "block",
+        }),
+        defineArrayMember({
+          type: "image",
+          options: { hotspot: true },
+          fields: [
+            defineField({
+              name: "alt",
+              title: "Alternative text",
+              type: "string",
+              validation: (Rule) => Rule.required(),
+            }),
+            defineField({
+              name: "caption",
+              title: "Caption",
+              type: "string",
+            }),
+          ],
         }),
       ],
       validation: (Rule) => Rule.required().min(1),
