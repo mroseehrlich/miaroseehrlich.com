@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="section-copy">
           <p className="quiet">
-            Selected software work and project notes.
+            Selected work and ongoing experiments.
           </p>
         </div>
       </Link>
@@ -44,6 +44,19 @@ export default function Home() {
         <div className="section-copy">
           <p className="quiet">
             Essays, notes, and fragments.
+          </p>
+        </div>
+      </Link>
+
+      <Link
+        className="section section-link"
+        href="/photos"
+      >
+        <h2>Still Life</h2>
+
+        <div className="section-copy">
+          <p className="quiet">
+            Images, objects, and observations.
           </p>
         </div>
       </Link>

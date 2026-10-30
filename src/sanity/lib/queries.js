@@ -62,3 +62,19 @@ export const WRITING_ENTRY_QUERY = defineQuery(`
   }
 `);
 
+
+export const PHOTOGRAPHS_QUERY = defineQuery(`
+  *[_type == "photograph" && defined(image.asset)] 
+    | order(_createdAt desc) {
+      _id,
+      title,
+      caption,
+      takenAt,
+      image {
+        ...,
+        "dimensions": asset->metadata.dimensions
+      }
+    }
+`);
+
+
