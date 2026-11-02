@@ -60,6 +60,19 @@ export default function Home() {
           </p>
         </div>
       </Link>
+
+      <Link
+        className="section section-link"
+        href="/about"
+      >
+        <h2>About</h2>
+
+        <div className="section-copy">
+          <p className="quiet">
+            The proprietor, and other loose ends.
+          </p>
+        </div>
+      </Link>
     </main>
   );
 }

@@ -631,6 +631,142 @@ p {
   color: var(--muted);
 }
 
+
+/* About page */
+
+.about-page {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 80vh;
+  padding-bottom: 6rem;
+}
+
+.about-home {
+  display: inline-block;
+  color: #e8ded0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.about-home:hover {
+  color: #c58b69;
+}
+
+.about-header {
+  position: relative;
+  z-index: 2;
+  margin-top: 5rem;
+  margin-bottom: 3.5rem;
+}
+
+.about-header h1 {
+  margin: 0;
+  font-size: clamp(4.25rem, 9vw, 8rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.about-composition {
+  position: relative;
+  min-height: 42rem;
+}
+
+.about-copy {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 39rem);
+  color: #d1c5b7;
+  font-family: Georgia, serif;
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  line-height: 1.85;
+}
+
+.about-copy p {
+  margin: 0 0 2rem;
+}
+
+.about-copy .about-introduction {
+  color: #eee5d9;
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  line-height: 1.6;
+}
+
+.about-portrait {
+  position: absolute;
+  z-index: 1;
+  top: -11rem;
+  right: -2rem;
+  width: min(52%, 38rem);
+  aspect-ratio: 1;
+  overflow: hidden;
+  opacity: 0.72;
+
+  mask-image: radial-gradient(
+    ellipse 66% 70% at 56% 44%,
+    black 24%,
+    rgba(0, 0, 0, 0.85) 45%,
+    transparent 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 66% 70% at 56% 44%,
+    black 24%,
+    rgba(0, 0, 0, 0.85) 45%,
+    transparent 100%
+  );
+}
+
+.about-portrait-image {
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(1) contrast(1.08) brightness(0.84);
+}
+
+.about-invitation {
+  margin-top: 4.5rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(238, 231, 220, 0.11);
+}
+
+.about-invitation p:last-child {
+  margin-bottom: 0;
+  color: #eee5d9;
+}
+
+@media (max-width: 760px) {
+  .about-header {
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-composition {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .about-portrait {
+    position: relative;
+    order: -1;
+    top: auto;
+    right: auto;
+    align-self: flex-end;
+    width: min(88%, 25rem);
+    margin: -1.5rem -1rem 1rem 0;
+    opacity: 0.8;
+  }
+
+  .about-copy {
+    width: 100%;
+  }
+
+  .about-invitation {
+    margin-top: 2.5rem;
+  }
+}
+
+
 @media (max-width: 700px) {
   .photo-gallery {
     grid-template-columns: 1fr;

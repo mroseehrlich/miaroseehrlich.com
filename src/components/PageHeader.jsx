@@ -10,7 +10,7 @@ export default function PageHeader({
     <header className="page-header">
       <nav className="page-header-nav" aria-label="Page navigation">
         <Link href="/" className="page-header-site">
-          Mia Rose Ehrlich
+          Home (allegedly)
         </Link>
 
         {parent && (
