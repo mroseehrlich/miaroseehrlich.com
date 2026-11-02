@@ -43,13 +43,13 @@ export default function AboutPage() {
             I work predominantly in Ruby, SQL, and backend systems.
             My background is in philosophy, mathematics, and
             literature, and you can often find me skulking around
-            my garden with Plato or Rousseau. This may explain why
-            I'm generally more interested in the questions around
-            systems than the code that implements them.
+            my garden with Montaigne or Rousseau and my two oversized, 
+            plausibly cryptid canine creatures.
           </p>
 
           <p>
-            I like computers, but I'm skeptical about what
+            I'm generally more interested in systems than 
+            the code that implements them. I like computers, but I'm skeptical about what
             people do with them.
           </p>
 
