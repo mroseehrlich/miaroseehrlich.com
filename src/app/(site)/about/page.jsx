@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <main className="about-page">
       <Link href="/" className="about-home">
-        Mia Rose Ehrlich
+        Home (allegedly)
       </Link>
 
       <header className="about-header">
