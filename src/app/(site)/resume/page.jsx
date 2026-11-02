@@ -77,7 +77,7 @@ const education = [
     institution: "St. John's College",
     degree: "B.A. Liberal Arts",
     detail:
-      "Interdisciplinary Great Books curriculum. Mathematics, natural science, philosophy, literature, and primary-text analysis.",
+      "Interdisciplinary Great Books curriculum, emphasizing mathematics, natural science, philosophy, literature, and primary-text analysis.",
     date: "2014",
   },
 ];
