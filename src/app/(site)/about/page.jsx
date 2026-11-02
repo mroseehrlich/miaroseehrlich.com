@@ -44,7 +44,7 @@ export default function AboutPage() {
             My background is in philosophy, mathematics, and
             literature, and you can often find me skulking around
             my garden with Plato or Rousseau. This may explain why
-            I'm often more interested in the questions around
+            I'm generally more interested in the questions around
             systems than the code that implements them.
           </p>
 
