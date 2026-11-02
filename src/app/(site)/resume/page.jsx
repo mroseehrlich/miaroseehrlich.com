@@ -13,7 +13,7 @@ const experience = [
     company: "Unity FI Solutions",
     history: "Formerly Payrix, FIS, and Worldpay",
     dates: "December 2021 – Present",
-    team: "GOACH Product Team",
+    team: "GoACH Product Team",
     summary:
       "Continued with the same product team through successive acquisitions and organizational transitions, building and maintaining financial software for ACH processing, merchant operations, reporting, and customer-facing applications.",
     highlights: [
@@ -48,19 +48,20 @@ const skills = [
   {
     label: "Applications & data",
     value:
-      "Ruby on Rails, Spring Boot, React, Node.js, Express, REST APIs, MySQL, PostgreSQL, relational modeling, schema migrations",
+      "Ruby on Rails, Spring Boot, React, Next.js, Node.js, Express, REST APIs, API integrations, MySQL, PostgreSQL, relational modeling, schema migrations",
   },
   {
     label: "Production & infrastructure",
     value:
-      "Linux, Sidekiq, Docker, Google Cloud Platform, Firebase, background processing, production debugging, data analysis",
+      "Linux, Sidekiq, Docker, Google Cloud Platform, Firebase, asynchronous processing, production troubleshooting, data analysis",
   },
   {
-    label: "Development tools",
+    label: "Development & testing",
     value:
-      "Git, GitHub, Minitest, Azure DevOps, Postman, MySQL Workbench, Chrome DevTools",
+      "Git, GitHub, Azure DevOps, Minitest, Postman, automated testing",
   },
 ];
+
 
 const education = [
   {
