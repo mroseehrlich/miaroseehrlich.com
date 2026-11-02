@@ -5,22 +5,30 @@ export default function SiteFooter() {
         For engineering work, collaboration, or conversation.
       </p>
 
-      <nav
-        className="footer-links"
-        aria-label="Contact and external links"
-      >
-        <a href="mailto:mia.rose.ehrlich@gmail.com">Email</a>
-
-        <a
-          href="https://github.com/mroseehrlich"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="footer-bottom">
+        <nav
+          className="footer-links"
+          aria-label="Contact and external links"
         >
-          GitHub
-        </a>
+          <a href="mailto:mia.rose.ehrlich@gmail.com">Email</a>
 
-        <a href="/resume">Résumé</a>
-      </nav>
+          <a
+            href="https://github.com/mroseehrlich"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a href="/resume">Résumé</a>
+        </nav>
+        
+        <small className="footer-copyright">
+          © {new Date().getFullYear()} Mia Rose Ehrlich
+          <span aria-hidden="true"> | </span>
+          Help/Trouble Designs
+        </small>
+      </div>
     </footer>
   );
 }
