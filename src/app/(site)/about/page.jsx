@@ -67,8 +67,7 @@ export default function AboutPage() {
 
             <p>
               Some of what you'll find might be useful.
-              Some not so much. The distinction isn't
-              particularly helpful.
+              Some not so much. I'd prefer to ignore the distinction.
             </p>
           </div>
         </article>
