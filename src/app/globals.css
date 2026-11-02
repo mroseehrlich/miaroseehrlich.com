@@ -767,6 +767,57 @@ p {
 }
 
 
+.resume-home {
+  display: inline-block;
+  margin-bottom: 4.5rem;
+  color: #e8ded0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.resume-home:hover {
+  color: #bc8a6f;
+}
+
+.resume-summary {
+  max-width: 43rem;
+  margin-top: 2.5rem;
+  color: #d7ccbf;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.resume-history,
+.resume-team {
+  color: #a99b8d;
+  font-size: 0.9rem;
+}
+
+.resume-team {
+  margin-bottom: 1rem;
+}
+
+.resume-entry-heading > div {
+  min-width: 0;
+}
+
+.resume-entry-heading p {
+  margin-bottom: 0.25rem;
+}
+
+@media print {
+  .resume-home {
+    display: none;
+  }
+
+  .resume-summary {
+    margin-top: 0.75rem;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+}
+
 @media (max-width: 700px) {
   .photo-gallery {
     grid-template-columns: 1fr;
@@ -897,5 +948,99 @@ p {
     animation-iteration-count: 1 !important;
     transition-duration: 1ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+
+/* Résumé layout refinements */
+
+.resume-content {
+  width: 100%;
+  max-width: 960px;
+}
+
+.resume-section {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: start;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(238, 231, 220, 0.12);
+}
+
+.resume-section > h2 {
+  margin: 0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #bc8a6f;
+}
+
+.resume-section-body {
+  min-width: 0;
+  max-width: 680px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.resume-entry + .resume-entry {
+  margin-top: 3.5rem;
+}
+
+.resume-entry-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.resume-entry h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.resume-highlights {
+  margin: 1.5rem 0 0;
+  padding-left: 1.35rem;
+  list-style: disc;
+}
+
+.resume-highlights li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.3rem;
+  line-height: 1.65;
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.resume-skill h3 {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 760px) {
+  .resume-section {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 2.5rem 0;
+  }
+
+  .resume-section-body {
+    max-width: 100%;
+  }
+
+  .resume-entry-heading {
+    display: block;
+  }
+
+  .resume-highlights {
+    padding-left: 1.25rem;
   }
 }

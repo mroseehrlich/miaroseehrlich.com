@@ -19,7 +19,7 @@ export default function SiteFooter() {
           GitHub
         </a>
 
-        <a href="/resume.pdf">Résumé</a>
+        <a href="/resume">Résumé</a>
       </nav>
     </footer>
   );
