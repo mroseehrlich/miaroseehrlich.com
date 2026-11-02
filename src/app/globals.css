@@ -1062,3 +1062,110 @@ p {
     padding-left: 1.25rem;
   }
 }
+
+
+/* Cabinet */
+
+.cabinet-page {
+  width: 100%;
+  min-height: 75vh;
+  padding-bottom: 6rem;
+}
+
+.cabinet-home {
+  display: inline-block;
+  margin-bottom: 4.5rem;
+  color: #e8ded0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.cabinet-home:hover {
+  color: #bc8a6f;
+}
+
+.cabinet-header {
+  margin-bottom: 5rem;
+}
+
+.cabinet-header h1 {
+  margin: 0 0 1.5rem;
+}
+
+.cabinet-header p {
+  max-width: 35rem;
+  margin: 0;
+  color: #c7b9aa;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.cabinet-collection {
+  width: min(100%, 760px);
+}
+
+.cabinet-case {
+  border: 1px solid rgba(216, 198, 174, 0.17);
+  background: rgba(24, 19, 16, 0.25);
+}
+
+.cabinet-case-top,
+.cabinet-case-bottom {
+  padding: 1.1rem 1.5rem;
+  color: #a99a89;
+  font-size: 0.75rem;
+  letter-spacing: 0.065em;
+}
+
+.cabinet-case-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(216, 198, 174, 0.12);
+  text-transform: uppercase;
+}
+
+.cabinet-case-interior {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  padding: 3rem 1.5rem;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(87, 63, 46, 0.16),
+      transparent 70%
+    );
+}
+
+.cabinet-case-interior p {
+  margin: 0;
+  color: #d4c4b3;
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-style: italic;
+  text-align: center;
+}
+
+.cabinet-case-bottom {
+  border-top: 1px solid rgba(216, 198, 174, 0.12);
+}
+
+@media (max-width: 700px) {
+  .cabinet-home {
+    margin-bottom: 3rem;
+  }
+
+  .cabinet-header {
+    margin-bottom: 3rem;
+  }
+
+  .cabinet-case-top {
+    font-size: 0.65rem;
+  }
+
+  .cabinet-case-interior {
+    min-height: 210px;
+  }
+}

@@ -61,6 +61,19 @@ export default function Home() {
         </div>
       </Link>
 
+            <Link
+        className="section section-link"
+        href="/cabinet"
+      >
+        <h2>Cabinet</h2>
+
+        <div className="section-copy">
+          <p className="quiet">
+            Items resisting classification.
+          </p>
+        </div>
+      </Link>
+
       <Link
         className="section section-link"
         href="/about"
