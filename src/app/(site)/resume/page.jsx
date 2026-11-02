@@ -92,6 +92,8 @@ export default function ResumePage() {
 
         <h1>Résumé</h1>
 
+        <p className="resume-subtitle">Gainful Employment</p>
+        
         <p className="resume-deck">
           Backend engineering · APIs · Data systems
         </p>

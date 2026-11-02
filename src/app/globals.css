@@ -997,6 +997,24 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.resume-subtitle {
+  margin: 1.5rem 0 0;
+  color: #c18b70;
+  font-family: Georgia, serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.resume-deck {
+  margin: 1.15rem 0 0;
+  color: #a99b8d;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+}
+
 .resume-entry h3 {
   margin: 0 0 0.5rem;
   font-size: 1.2rem;
