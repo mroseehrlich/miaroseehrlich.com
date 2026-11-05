@@ -71,9 +71,6 @@ src/
     └── SiteFooter.jsx
 
 public/                 # Static design assets
-docs/
-    project_context.md  # Design and architectural direction
-AGENTS.md               # Coding-agent instructions
 ```
 
 Next.js uses file-based routing through the `app` directory. Each `page.jsx` defines a route, while `layout.jsx` provides shared structure.
