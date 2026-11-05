@@ -10,6 +10,10 @@ lerna-debug.log*
 # Dependencies
 node_modules
 
+# AGENTS if used in the future
+AGENTS.md
+docs/
+
 # Build output
 .next/
 out/
