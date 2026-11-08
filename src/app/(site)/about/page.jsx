@@ -60,14 +60,12 @@ export default function AboutPage() {
               what the web can be when it isn't trying to sell
               you something. There's software here, along
               with photography, writing, and eventually a
-              collection of interactive experiments. Think of it
-              like an oddities shop. Let yourself be surprised.
-              I usually am.
+              collection of interactive experiments.
             </p>
 
             <p>
               Some of what you'll find might be useful.
-              Some not so much. I'd prefer to ignore the distinction.
+              Some not so much. I prefer to ignore the distinction.
             </p>
           </div>
         </article>

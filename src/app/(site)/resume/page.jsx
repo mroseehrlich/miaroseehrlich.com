@@ -7,22 +7,20 @@ export const metadata = {
     "Professional experience, technical skills, and education of Mia Rose Ehrlich, software engineer.",
 };
 
+
 const experience = [
   {
     role: "Software Engineer",
     company: "Unity FI Solutions",
     history: "Formerly Payrix, FIS, and Worldpay",
     dates: "December 2021 – Present",
-    team: "GoACH Product Team",
     summary:
-      "Continued with the same product team through successive acquisitions and organizational transitions, building and maintaining financial software for ACH processing, merchant operations, reporting, and customer-facing applications.",
+      "Develop and maintain financial applications supporting ACH processing, merchant operations, reporting, and integrations.",
     highlights: [
-      "Serve as the primary engineer for REST APIs, including endpoint design, feature development, code review, and client integration investigations.",
-      "Translate customer and operational requirements into application features and API changes, often working without a prescribed technical solution.",
-      "Built shared infrastructure for asynchronous report exports and migrated most application reports from synchronous requests to background jobs.",
-      "Redesigned ACH return-fee workflows to address duplicate fees, transaction associations, retry behavior, balance reconciliation, and internal notifications.",
-      "Investigate production issues across Rails applications, SQL databases, background processing, and third-party integrations.",
-      "Work across schema changes, application business logic, background jobs, and user-facing interfaces.",
+      "Design, develop, and maintain internal REST APIs supporting application functionality and customer-facing integrations.",
+      "Develop application features across database models, business logic, and asynchronous processing.",
+      "Design and maintain shared infrastructure for asynchronous reporting and background processing.",
+      "Investigate production issues involving application behavior, financial data integrity, and third-party services.",
     ],
   },
   {
@@ -30,14 +28,16 @@ const experience = [
     company: "Ignite Now Media",
     history: "American Dream Media and Tech",
     dates: "January 2021 – September 2021",
+    summary:
+      "Developed web applications and integrations using React, Node.js, Express, and Firebase.",
     highlights: [
-      "Owned development and maintenance of a client-facing React dashboard and its supporting services.",
-      "Served as product manager and backend engineer for an internal CRM replacement, gathering requirements and coordinating implementation with operations and leadership.",
+      "Served as product manager and backend engineer for an internal CRM replacement, leading requirements gathering and coordinating implementation with operations and leadership.",
       "Designed and developed APIs connecting legacy CRM software, internal systems, and client dashboards using Node.js, Express, and Firebase.",
-      "Directed frontend implementation, reviewed another developer's work, and contributed React code to resolve functionality and maintainability issues.",
+      "Developed and maintained a client-facing React dashboard and its supporting services, including improvements to functionality and maintainability.",
     ],
   },
 ];
+
 
 const skills = [
   {
@@ -94,10 +94,6 @@ export default function ResumePage() {
         <h1>Résumé</h1>
 
         <p className="resume-subtitle">Gainful Employment</p>
-        
-        <p className="resume-deck">
-          Backend engineering · APIs · Data systems
-        </p>
 
         <p className="resume-summary">
           Software engineer with six years of experience building
