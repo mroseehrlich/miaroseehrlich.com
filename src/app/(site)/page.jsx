@@ -7,14 +7,17 @@ export default function Home() {
         <div className="intro-copy">
           <h1>Mia Rose Ehrlich</h1>
 
-          <p className="lede">
-            Software engineer based in Santa Fe, New Mexico.
+          <div className="intro-identity">
+            <span className="intro-role">Software engineer</span>
+            <span className="intro-separator" aria-hidden="true">/</span>
+            <span className="intro-location">Santa Fe, New Mexico</span>
+          </div>
+
+          <p className="intro-description">
+            Backend systems, web applications, writing, and digital
+            spaces with a sense of place.
           </p>
 
-          <p>
-            Backend systems, web applications, writing, and
-            digital spaces with a sense of place.
-          </p>
         </div>
 
         <div className="artifact" aria-hidden="true">

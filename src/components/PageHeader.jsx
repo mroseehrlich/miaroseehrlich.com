@@ -9,8 +9,13 @@ export default function PageHeader({
   return (
     <header className="page-header">
       <nav className="page-header-nav" aria-label="Page navigation">
-        <Link href="/" className="page-header-site">
-          Home (allegedly)
+
+
+        <Link href="/" className="home-link">
+          <span className="home-link-label">Home</span>
+          <span className="home-link-aside" aria-hidden="true">
+            (allegedly)
+          </span>
         </Link>
 
         {parent && (

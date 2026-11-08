@@ -110,6 +110,48 @@ a:hover {
   z-index: 2;
 }
 
+
+.intro-identity {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.75rem;
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: text-arrive 1000ms ease-out 650ms forwards;
+}
+
+.intro-role {
+  color: #eee7dc;
+  font-family: var(--font-libre-baskerville), Georgia, serif;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+}
+
+.intro-separator {
+  color: var(--rust);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.intro-location {
+  color: #a99b8d;
+  font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+  font-style: italic;
+}
+
+.intro-description {
+  max-width: 38rem;
+  margin-bottom: 0;
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: text-arrive 1000ms ease-out 850ms forwards;
+}
+
+
 h1,
 h2,
 p {
@@ -328,6 +370,62 @@ p {
 @media (max-width: 600px) {
   .page-header-nav {
     margin-bottom: 2.75rem;
+  }
+}
+
+
+.home-link {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 1.1rem;
+
+  color: var(--bone);
+  font-family: var(--font-libre-baskerville), Georgia, serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.home-link-label {
+  display: inline-block;
+  border-bottom: 1px solid rgba(238, 231, 220, 0.25);
+  transition: border-color 200ms ease;
+}
+
+.home-link-aside {
+  position: absolute;
+  top: 1.55rem;
+  left: 0;
+
+  color: #a78c7b;
+  font-family: Georgia, serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(-3px);
+  transition:
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.home-link:hover .home-link-label,
+.home-link:focus-visible .home-link-label {
+  border-color: var(--rust);
+}
+
+.home-link:hover .home-link-aside,
+.home-link:focus-visible .home-link-aside {
+  opacity: 0.85;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-link-label,
+  .home-link-aside {
+    transition: none;
   }
 }
 
@@ -916,6 +1014,14 @@ p {
   h1 {
     white-space: normal;
     font-size: clamp(2.8rem, 15vw, 4.8rem);
+  }
+
+  .intro h1 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-size: clamp(3.5rem, 6.5vw, 6.2rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
   }
 
   .artifact {
