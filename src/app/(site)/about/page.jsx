@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "../../../components/PageHeader";
 
 export const metadata = {
   title: "About | Mia Rose Ehrlich",
@@ -11,13 +12,9 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="about-page">
-      <Link href="/" className="about-home">
-        Home (allegedly)
-      </Link>
-
-      <header className="about-header">
-        <h1>About</h1>
-      </header>
+      <PageHeader 
+        title="About"
+      />
 
       <div className="about-composition">
         <div className="about-portrait">

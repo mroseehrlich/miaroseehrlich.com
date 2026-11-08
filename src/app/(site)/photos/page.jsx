@@ -36,7 +36,9 @@ export default async function PhotosPage() {
 
   return (
     <main className="subpage">
-      <PageHeader title="Still Life" />
+      <PageHeader 
+        title="Still Life"
+      />
 
       {photographs.length === 0 ? (
         <p className="quiet">

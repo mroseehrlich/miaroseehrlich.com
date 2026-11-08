@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageHeader from "../../../components/PageHeader";
 
 export const metadata = {
   title: "Cabinet | Mia Rose Ehrlich",
@@ -10,16 +11,10 @@ export const metadata = {
 export default function CabinetPage() {
   return (
     <main className="cabinet-page">
-      <Link href="/" className="cabinet-home">
-        Home (allegedly)
-      </Link>
-
-      <header className="cabinet-header">
-        <h1>Cabinet</h1>
-        <p>
-          Experiments in writing, interaction, and other assorted oddities.
-        </p>
-      </header>
+      <PageHeader 
+        title="Cabinet"
+        description="Experiments in writing, interaction, and other assorted oddities."
+      />
 
       <section className="cabinet-collection" aria-label="Cabinet collection">
         <div className="cabinet-case">

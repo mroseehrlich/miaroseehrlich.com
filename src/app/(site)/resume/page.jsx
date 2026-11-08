@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import PageHeader from "../../../components/PageHeader";
 
 export const metadata = {
   title: "Résumé | Mia Rose Ehrlich",
@@ -86,23 +87,19 @@ const education = [
 export default function ResumePage() {
   return (
     <main className="resume-page">
-      <header className="resume-header">
-        <Link href="/" className="resume-home">
-          Home (allegedly)
-        </Link>
 
-        <h1>Résumé</h1>
-
+      <PageHeader title="Résumé">
         <p className="resume-subtitle">Gainful Employment</p>
 
         <p className="resume-summary">
-          Software engineer with six years of experience building
+          Full-stack software engineer with six years of experience building
           and maintaining production applications. My work
           includes REST APIs, relational databases, financial
           integrations, asynchronous processing, and production
           troubleshooting.
         </p>
-      </header>
+      </PageHeader>
+
 
       <div className="resume-content">
         <section className="resume-section" id="experience">

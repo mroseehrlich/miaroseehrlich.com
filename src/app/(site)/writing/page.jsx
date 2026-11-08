@@ -15,7 +15,9 @@ export default async function WritingPage() {
 
   return (
     <main className="subpage">
-      <PageHeader title="Writing" />
+      <PageHeader 
+        title="Writing"
+      />
 
       <section
         className="writing-list"

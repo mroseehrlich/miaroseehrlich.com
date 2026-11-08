@@ -373,7 +373,6 @@ p {
   }
 }
 
-
 .home-link {
   position: relative;
   display: inline-block;
@@ -426,6 +425,62 @@ p {
   .home-link-label,
   .home-link-aside {
     transition: none;
+  }
+}
+
+
+/* Shared header adjustments for individual pages */
+
+/* About: preserve the oversized title and portrait composition */
+.about-page .page-header-nav {
+  margin-bottom: 5rem;
+}
+
+.about-page .page-header {
+  padding-bottom: 3.5rem;
+}
+
+.about-page .page-header-title {
+  font-size: clamp(4.25rem, 9vw, 8rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+/* Cabinet: keep the collection close to its introduction */
+.cabinet-page .page-header {
+  padding-bottom: 0;
+  margin-bottom: 5rem;
+}
+
+.cabinet-page .page-header-description {
+  max-width: 35rem;
+  color: #c7b9aa;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+/* Résumé: preserve its independent introductory hierarchy */
+.resume-page .page-header {
+  padding-bottom: 0;
+}
+
+.resume-page .page-header-nav {
+  margin-bottom: 4.5rem;
+}
+
+@media (max-width: 760px) {
+  .about-page .page-header-nav {
+    margin-bottom: 3.5rem;
+  }
+
+  .about-page .page-header {
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cabinet-page .page-header {
+    margin-bottom: 3rem;
   }
 }
 
@@ -761,32 +816,6 @@ p {
   padding-bottom: 6rem;
 }
 
-.about-home {
-  display: inline-block;
-  color: #e8ded0;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.about-home:hover {
-  color: #c58b69;
-}
-
-.about-header {
-  position: relative;
-  z-index: 2;
-  margin-top: 5rem;
-  margin-bottom: 3.5rem;
-}
-
-.about-header h1 {
-  margin: 0;
-  font-size: clamp(4.25rem, 9vw, 8rem);
-  line-height: 1;
-  letter-spacing: -0.045em;
-}
-
 .about-composition {
   position: relative;
   min-height: 42rem;
@@ -883,20 +912,6 @@ p {
   .about-invitation {
     margin-top: 2.5rem;
   }
-}
-
-
-.resume-home {
-  display: inline-block;
-  margin-bottom: 4.5rem;
-  color: #e8ded0;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.resume-home:hover {
-  color: #bc8a6f;
 }
 
 .resume-summary {
@@ -1197,35 +1212,6 @@ p {
   width: 100%;
   min-height: 75vh;
   padding-bottom: 6rem;
-}
-
-.cabinet-home {
-  display: inline-block;
-  margin-bottom: 4.5rem;
-  color: #e8ded0;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
-.cabinet-home:hover {
-  color: #bc8a6f;
-}
-
-.cabinet-header {
-  margin-bottom: 5rem;
-}
-
-.cabinet-header h1 {
-  margin: 0 0 1.5rem;
-}
-
-.cabinet-header p {
-  max-width: 35rem;
-  margin: 0;
-  color: #c7b9aa;
-  font-size: 1.1rem;
-  line-height: 1.75;
 }
 
 .cabinet-collection {
