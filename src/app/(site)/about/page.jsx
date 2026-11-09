@@ -31,7 +31,7 @@ export default function AboutPage() {
         <article className="about-copy">
           <p className="about-introduction">
             Hi. I'm Mia. I live in Santa Fe, New Mexico, where
-            I write software, poetry, and pursue a rotating
+            I build software, write poetry, and otherwise pursue a rotating
             collection of interests with varying degrees of
             practicality.
           </p>
@@ -46,23 +46,23 @@ export default function AboutPage() {
 
           <p>
             I'm generally more interested in systems than 
-            the code that implements them. I like computers, but I'm skeptical about what
+            the code that implements them; I like computers, but I'm skeptical about what
             people do with them.
           </p>
 
           <div className="about-invitation">
             <p>
               This website is part professional portfolio, part
-              personal archive, and part excuse to experiment with
+              personal archive, and mostly an excuse to find out
               what the web can be when it isn't trying to sell
-              you something. There's software here, along
+              you something. There's software, along
               with photography, writing, and eventually a
               collection of interactive experiments.
             </p>
 
             <p>
               Some of what you'll find might be useful.
-              Some not so much. I prefer to ignore the distinction.
+              Some not so much. I'd prefer to ignore the distinction.
             </p>
           </div>
         </article>

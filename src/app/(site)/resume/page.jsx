@@ -27,7 +27,7 @@ const experience = [
   {
     role: "Lead Systems Engineer",
     company: "Ignite Now Media",
-    history: "American Dream Media and Tech",
+    history: "American Dream TV",
     dates: "January 2021 – September 2021",
     summary:
       "Developed web applications and integrations using React, Node.js, Express, and Firebase.",
